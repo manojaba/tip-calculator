@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'spaceMono';
+  src: url("./fonts/SpaceMono-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+
+  body {
+    font-family: 'spaceMono', sans-serif;
+  }
+
+}
+
+@theme {
+
+  --color-f-grey-600: #3D6666;
+  --color-f-grey-550: #547878;
+  --color-f-grey-500: #5E7A7D;
+  --color-f-grey-400: #7F9D9F;
+  --color-f-grey-300: #9EBBBD;
+  --color-f-grey-200: #C5E4E7;
+  --color-f-grey-50: #F3F9FA;
+  --color-f-green-900: #00474B;
+  --color-f-green-800: #085C61;
+  --color-f-green-750: #0D686D;
+  --color-f-green-400: #26C2AE;
+  --color-f-green-200: #9FE8DF;
+  --color-f-orange-400: #E17052;
+}
+
+@layer utilities {
+  .text-preset-1 {
+    @apply text-[48px] leading-[71px] tracking-[-1px] font-bold;
+  }
+
+  .text-preset-2 {
+    @apply text-[32px] leading-[47px] tracking-[-0.67px] font-bold;
+  }
+
+  .text-preset-3 {
+    @apply text-[24px] leading-[36px] tracking-[0px] font-bold;
+  }
+
+  .text-preset-4 {
+    @apply text-[20px] leading-[30px] tracking-[0px] font-bold;
+  }
+
+  .text-preset-5 {
+    @apply text-[16px] leading-[24px] tracking-[0px] font-bold;
+  }
+
+  .text-preset-6 {
+    @apply text-[13px] leading-[19px] tracking-[0px] font-bold;
+  }
+
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
