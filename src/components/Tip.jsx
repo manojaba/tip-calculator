@@ -4,7 +4,7 @@ function Tip({ bill, tip, setTip, activeButton, setActiveButton }) {
     return (
         <div className='mt-[32px]'>
             <p className='text-preset-5 text-f-grey-500'>Select Tip %</p>
-            <div className='grid  grid-cols-2 gap-[16px] mt-[8px] '>
+            <div className='grid  grid-cols-2 md:grid-cols-3 gap-[16px] mt-[8px] '>
                 <button onClick={() => {
                     setTip((5 / 100) * bill);
                     setActiveButton('5%');
